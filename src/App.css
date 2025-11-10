@@ -1,0 +1,41 @@
+/* Import custom fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #F5FFF5;
+  color: #2C3E50;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cursive-font {
+  font-family: 'Dancing Script', cursive;
+}
+
+.no-underline {
+  text-decoration: none;
+}
+
+.no-underline:hover {
+  text-decoration: none;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2E8B57;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FF8C00;
+}

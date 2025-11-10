@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --primary: #2E8B57;
+    --secondary: #FF8C00;
+    --accent: #3CB371;
+    --light: #F5FFF5;
+    --dark: #2C3E50;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-[#2E8B57] hover:bg-[#3CB371] text-white font-semibold py-3 px-6 rounded-full transition duration-300 ease-in-out transform hover:-translate-y-1;
+  }
+  
+  .btn-secondary {
+    @apply bg-[#FF8C00] hover:bg-orange-600 text-white font-semibold py-3 px-6 rounded-full transition duration-300 ease-in-out transform hover:-translate-y-1;
+  }
+  
+  .glass-card {
+    @apply bg-white/25 backdrop-blur-sm border border-white/30 rounded-2xl shadow-xl;
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-[#2E8B57] to-[#FF8C00] bg-clip-text text-transparent;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .text-shadow-md {
+    text-shadow: 0 4px 8px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.08);
+  }
+  
+  .text-shadow-lg {
+    text-shadow: 0 15px 30px rgba(0,0,0,0.11), 0 5px 15px rgba(0,0,0,0.08);
+  }
+}
